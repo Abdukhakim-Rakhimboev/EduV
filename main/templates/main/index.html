@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduV</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'main/scss/style.scss' %}">
+    <link rel="stylesheet" href="{% static 'main/css/global.css' %}">
+    <link rel="stylesheet" href="{% static 'main/scss/global.scss' %}">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'main/img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'main/img/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'main/img/favicon-16x16.png' %}">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <nav class="nav">
+                <div class="eduvv">
+                    <img src="{% static 'main/img/eduv.png' %}" alt="Eduv" class="eduv">
+                </div>
+                <ul class="header__nav-list">
+                    <li><a href="{% url 'home' %}" class="header__nav-link active" data-button= "content-1">Home</a></li>
+                    <li><a href="{% url 'about' %}" class="header__nav-link" data-button= "content-2">About Us</a></li>
+                    <li><a href="{% url 'contacts' %}" class="header__nav-link" data-button= "content-3">Contact Us</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+            <div class="header-block">
+                <div class="block-one">
+                    <div class="phrase-bl">
+                        <h1 class="h-t">Unlock Your Potential with Us</h1>
+                        <p class="header-text">
+                            Welcome to EDUV! We're passionate about helping you succeed in the SAT and IELTS—at no cost. Our expert resources, tailored study plans, and supportive community are dedicated to your academic journey. Join us and start achieving your dreams today!
+                        </p>
+                    </div>
+                    <img src="{% static 'main/img/first.png' %}" alt="first" class="rock">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container main-content">
+            <div class="block-two">
+                <img src="{% static 'main/img/target.png' %}" alt="target" class="target">
+                <div class="text-two">
+                    <p class="t-two">
+                        Collaborate and Connect: Foster meaningful discussions, exchange ideas, and connect with peers and educators alike.
+                    </p>
+                    <p class="t-twoo">
+                        Inspire Creativity: Encourage innovative teaching methods and creative expression through multimedia content.
+                        Whether you're enhancing classroom learning, preparing for exams, or simply exploring new interests, our platform is designed to empower both educators and learners. Start sharing and discovering today!
+                    </p>
+                </div>
+            </div>
+            <div class="block-three" id="three">
+                <h1 class="three__title">About lessons</h1>
+                <div class="info">
+                    <div class="sat">
+                        <h1 class="sat-title">SAT</h1>
+                        <div class="p1">
+                            <p class="firstt">-There are subjects like:</p>
+                            <p class="first">English grammer</p>
+                            <p class="first">Math</p>
+                            <p class="first">Advanced math</p>
+                        </div>
+                        <div class="p2">
+                            <p class="secondd">-In total, there are ...video lessons</p>
+                            <p class="second">English grammer - ...videos</p>
+                            <p class="second">Math - ...videos</p>
+                            <p class="second">Advanced math - ...videos</p>
+                        </div>
+                    </div>
+                    <img src="{% static 'main/img/idea.png' %}" alt="idea" class="idea">
+                    <div class="ielts">
+                        <h1 class="sat-title">IELTS</h1>
+                        <div class="p1">
+                            <p class="firstt">-There are subjects like:</p>
+                            <p class="first">Listening</p>
+                            <p class="first">Reading</p>
+                            <p class="first">Writing</p>
+                            <p class="first">Speaking</p>
+                        </div>
+                        <div class="p2">
+                            <p class="secondd">-In total, there are ...video lessons</p>
+                            <p class="second">Listening - ...videos</p>
+                            <p class="second">Reading - ...videos</p>
+                            <p class="second">Writing - ...videos</p>
+                            <p class="second">Speaking - ...videos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <!-- <div class="counter" id="counter">0</div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    let counter = document.getElementById('counter');
+                    let count = 0;
+                    let counting = false;
+        
+                    function startCounting() {
+                        if (!counting) {
+                            counting = true;
+                            let interval = setInterval(function() {
+                                counter.textContent = count;
+                                count++;
+                                if (count > 50) {
+                                    clearInterval(interval);
+                                }
+                            }, 50); // скорость анимации, можно изменить по желанию
+                        }
+                    }
+        
+                    function isElementInViewport(el) {
+                        let rect = el.getBoundingClientRect();
+                        return (
+                            rect.top >= 0 &&
+                            rect.left >= 0 &&
+                            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                        );
+                    }
+        
+                    function onScroll() {
+                        if (isElementInViewport(counter)) {
+                            startCounting();
+                            window.removeEventListener('scroll', onScroll); // Отключаем событие прокрутки после запуска анимации
+                        }
+                    }
+        
+                    window.addEventListener('scroll', onScroll);
+                    onScroll(); // Проверяем при загрузке страницы
+                });
+            </script> -->
+        </div>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <section class="top">
+                <div class="logo-bl">
+                    <img src="{% static 'main/img/eduv.png' %}" alt="logo" class="footer-logo">
+                    <h1 class="footer-t">EduV</h1>
+                </div>
+                <section class="s-t">
+                    <h1 class="socials-title">Subscribe to our s.m networks :)</h1>
+                    <div class="socials">
+                        <a href="https://www.instagram.com/eduv.uz">
+                            <img src="{% static 'main/img/instagram.png' %}" alt="inst" class="social">
+                        </a>
+                        <a href="https://t.me/eduvvuz">
+                            <img src="{% static 'main/img/telegram.png' %}" alt="tg" class="social">
+                        </a>
+                    </div>
+                </section>
+            </section>
+            <hr>
+            <section class="bottom">
+                <h3>© 2024 made by Abdukhakim Rakhimboev.</h3>
+            </section>
+        </div>
+    </footer>
+    
+    
+    
+    <script src="{% static 'main/js/main.js' %}"></script>
+</body>
+</html>

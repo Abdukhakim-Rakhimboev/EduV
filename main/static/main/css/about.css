@@ -1,0 +1,229 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  background-color: lightyellow;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  /* background: rgba(245, 245, 245, 0.50);
+  backdrop-filter: blur(82.5px); */
+}
+
+.eduv {
+  width: 130px;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
+
+.kim {
+    -webkit-animation: image-anim 8s infinite ease-in-out;
+    animation: image-anim 8s infinite ease-in-out;
+    border-radius: 50%;
+    /* border: 10px solid #260cbd; */
+    width: 453px;
+    height: 436px;
+  }
+.iqbol {
+    -webkit-animation: image-anim 8s infinite ease-in-out;
+    animation: image-anim 8s infinite ease-in-out;
+    border-radius: 50%;
+    /* border: 10px solid #260cbd; */
+    /* width: 300px;
+    height: 300px; */
+  }
+
+
+
+@-webkit-keyframes image-anim {
+  /* 0% { clip-path: circle(0% at 50% 50%); } */
+  /* 100% { clip-path: circle(50% at 50% 50%); } */
+  /* //// */
+  /* 25% { clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%); }
+  50% { clip-path: polygon(45% 14%, 81% 9%, 94% 38%, 83% 68%, 81% 95%, 50% 100%, 23% 89%, 3% 75%, 3% 39%, 21% 12%); }
+  75% { clip-path: polygon(51% 18%, 93% 9%, 96% 37%, 91% 78%, 71% 98%, 44% 95%, 14% 92%, 0% 70%, 12% 41%, 20% 10%); } */
+  0% {
+    border-radius: 58% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30%;
+  }
+  100% {
+    border-radius: 58% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+@keyframes image-anim {
+  /* 0% { clip-path: circle(0% at 50% 50%); } */
+  /* 100% { clip-path: circle(50% at 50% 50%); } */
+  /* //// */
+  /* 25% { clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%); }
+  50% { clip-path: polygon(45% 14%, 81% 9%, 94% 38%, 83% 68%, 81% 95%, 50% 100%, 23% 89%, 3% 75%, 3% 39%, 21% 12%); }
+  75% { clip-path: polygon(51% 18%, 93% 9%, 96% 37%, 91% 78%, 71% 98%, 44% 95%, 14% 92%, 0% 70%, 12% 41%, 20% 10%); } */
+  0% {
+    border-radius: 58% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30%;
+  }
+  100% {
+    border-radius: 58% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+
+
+
+
+
+.landing {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+  margin-bottom: 70px;
+}
+
+.faunders {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.kimm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: #000 0 0 10px 1px;
+  transition: 0.15s;
+}
+.kimm:hover {
+  transition: 0.15s;
+  background-color: aquamarine;
+  transform: scale(1.043);
+}
+
+
+.kimm:hover p {
+  transition: 0.15s;
+  background-color: aquamarine;
+}
+.kimm:hover h1 {
+  transition: 0.15s;
+  background-color: aquamarine;
+}
+.kimm:hover section {
+  transition: 0.15s;
+  background-color: aquamarine;
+}
+
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+  transition: 0.15s;
+}
+
+
+
+.f-name {
+  font-size: 24px;
+  font-weight: 600;
+  transition: 0.15s;
+}
+
+.school {
+  font-weight: 600;
+  transition: 0.15s;
+}
+
+.f-eng {
+  font-size: 24px;
+  font-weight: 600;
+  color: crimson;
+  transition: 0.15s;
+}
+
+
+
+
+@media(max-width: 1400px) {
+  .kim {
+    width: 385px;
+    height: 337px;
+  }
+  .iqbol {
+    width: 385px;
+    height: 337px;
+  }
+  .landing {
+    gap: 80px;
+  }
+}
+
+@media(max-width: 1050px) {
+  .landing {
+    display: flex;
+    flex-direction: column;
+  }
+  .faunders {
+    font-size: 40px;
+  }
+}
+
+
+@media(max-width: 600px) {
+  .kim {
+    width: 310px;
+    height: 300px;
+  }
+  .iqbol {
+    width: 310px;
+    height: 300px;
+  }
+}
+
+
+@media(max-width: 450px) {
+  .kimm {
+    box-shadow: none;
+    width: 330px;
+  }
+  .faunders {
+    margin-bottom: 10px;
+  }
+}

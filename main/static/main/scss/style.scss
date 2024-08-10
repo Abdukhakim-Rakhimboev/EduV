@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    background-color: lightyellow;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    /* background: rgba(245, 245, 245, 0.50);
+    backdrop-filter: blur(82.5px); */
+}
+
+.eduv {
+    width: 130px;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+.block-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.h-t {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.header-text {
+    font-size: 18px;
+    font-weight: 500;
+    width: 540px;
+}
+
+.block-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-two {
+    max-width: 730px;
+}
+
+.block-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.three__title {
+    font-weight: 600;
+    font-size: 37px;
+    margin-bottom: 60px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+.idea {
+    width: 340px;
+}
+
+.firstt {
+    font-weight: 500;
+    font-size: 20px;
+}
+.first {
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 12px;
+}
+
+.secondd {
+    font-weight: 500;
+    font-size: 20px;
+}
+.second {
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 12px;
+}
+
+.p1 {
+    margin-bottom: 20px;
+    transition: 0.15s;
+}
+.p2 {
+    transition: 0.15s;
+}
+
+.sat {
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: #000 0 0 10px 1px;
+    transition: 0.15s;
+}
+.ielts {
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: #000 0 0 10px 1px;
+    transition: 0.15s;
+}
+.sat p {
+    transition: 0.15s;
+}
+.sat h1 {
+    transition: 0.15s;
+}
+.sat:hover {
+    transition: 0.15s;
+    background-color: aquamarine;
+    transform: scale(1.043);
+}
+.sat:hover p {
+    transition: 0.15s;
+    background-color: aquamarine;
+}
+.sat:hover .p1 {
+    transition: 0.15s;
+    background-color: aquamarine;
+}
+.sat:hover .p2 {
+    transition: 0.15s;
+    background-color: aquamarine;
+}
+.sat:hover h1 {
+    transition: 0.15s;
+    background-color: aquamarine;
+}
+.ielts p {
+    transition: 0.15s;
+}
+.ielts h1 {
+    transition: 0.15s;
+}
+.ielts:hover {
+    transition: 0.15s;
+    background-color: aquamarine;
+    transform: scale(1.043);
+}
+.ielts:hover p {
+    transition: 0.15s;
+    background-color: aquamarine;
+}
+.ielts:hover .p1 {
+    transition: 0.15s;
+    background-color: aquamarine;
+}
+.ielts:hover .p2 {
+    transition: 0.15s;
+    background-color: aquamarine;
+}
+.ielts:hover h1 {
+    transition: 0.15s;
+    background-color: aquamarine;
+}
+
+/* .counter {
+    background-color: white; 
+    padding: 20px;
+    border: 1px solid black;
+    font-size: 2em;
+} */
