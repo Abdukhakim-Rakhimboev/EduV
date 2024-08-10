@@ -20,3 +20,7 @@ def ask_question(request):
 
 def success(request):
     return render(request, 'main/success.html')
+
+
+def lessons(request):
+    return render(request, 'main/lessons.html')
