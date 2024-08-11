@@ -26,24 +26,7 @@ ul {
   align-items: center;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 1000px;
-  /* background: rgba(245, 245, 245, 0.50);
-  backdrop-filter: blur(82.5px); */
-}
 
-.eduv {
-  width: 130px;
-}
-
-.header__nav-list {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
 
 
 

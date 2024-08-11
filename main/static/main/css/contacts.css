@@ -26,22 +26,6 @@ ul {
   align-items: center;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 1000px;
-}
-
-.eduv {
-  width: 130px;
-}
-
-.header__nav-list {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
 
 
 
