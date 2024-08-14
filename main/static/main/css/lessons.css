@@ -24,4 +24,125 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
+
+.mn__title {
+    color: #003366;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; 
+    margin-top: 35px;
+    font-family: 'Didot', serif;
+}
+
+.con-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.con-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+/* .con-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+} */
+
+.bottoms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px 15px 10px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+.bottoms:hover {
+    scale: 1.05;
+}
+
+
+.top-title {
+    color: #003366;
+    font-family: 'Didot', serif;
+    font-size: 36px;
+    margin-left: 218px;
+    margin-bottom: 24px;
+}
+.top-titlee {
+    color: #003366;
+    font-family: 'Didot', serif;
+    font-size: 36px;
+    margin-left: 70px;
+    margin-bottom: 24px;
+}
+
+.tit-box {
+    color: rgb(77, 141, 12);
+    background-color: #fff;
+}
+.text-box {
+    width: 250px;
+    background-color: #fff;    
+}
+/* .btn-box {
+    background-color: #fff;
+} */
+
+.btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: lightsalmon;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 3px solid black;
+    border-left: 1px solid black;
+    transition: 0.5s;  
+}
+.bottoms:hover .btn-box{
+    background-color: yellowgreen;
+    transition: 0.5s;
+}
+
+.cl {
+    font-size: 17px;
+    background-color: lightsalmon;
+    color: black;
+    transition: 0.5s;  
+}
+.bottoms:hover span {
+    background-color: yellowgreen;
+    transition: 0.5s;
+}
+
+.image__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 135px;
+    margin-bottom: 60px;
+}
+
+.lesson1 {
+    width: 400px;
+}
+.tothemoon {
+    width: 330px;
+}
