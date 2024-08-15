@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduV / Lessons</title>
+    
+    
+    <link rel="stylesheet" href="{% static 'main/css/videos.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/global.css' %}">
+    <link rel="stylesheet" href="{% static 'main/scss/global.scss' %}">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'main/img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'main/img/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'main/img/favicon-16x16.png' %}">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <nav class="nav">
+                <div class="eduvv">
+                    <img src="{% static 'main/img/eduv.png' %}" alt="Eduv" class="eduv">
+                </div>
+                <ul class="header__nav-list">
+                    <li><a href="{% url 'home' %}" class="header__nav-link">Home</a></li>
+                    <li><a href="{% url 'about' %}" class="header__nav-link">About Us</a></li>
+                    <li><a href="{% url 'lessons' %}" class="header__nav-link active">Lessons</a></li>
+                    <li><a href="{% url 'contacts' %}" class="header__nav-link">Contact Us</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+            <div class="bg__title">
+                <h1 class="mn__title">SAT & IELTS</h1>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="container footer-content">
+            <section class="top">
+                <div class="logo-bl">
+                    <img src="{% static 'main/img/eduv.png' %}" alt="logo" class="footer-logo">
+                    <h1 class="footer-t">EduV</h1>
+                </div>
+                <section class="s-t">
+                    <h1 class="socials-title">Subscribe to our s.m networks :)</h1>
+                    <div class="socials">
+                        <a href="https://www.instagram.com/eduv.uz">
+                            <img src="{% static 'main/img/instagram.png' %}" alt="inst" class="social">
+                        </a>
+                        <a href="https://t.me/eduvvuz">
+                            <img src="{% static 'main/img/telegram.png' %}" alt="tg" class="social">
+                        </a>
+                    </div>
+                </section>
+            </section>
+            <hr>
+            <section class="bottom">
+                <h3>© 2024 made by Abdukhakim Rakhimboev.</h3>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

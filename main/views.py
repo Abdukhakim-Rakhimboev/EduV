@@ -24,3 +24,7 @@ def success(request):
 
 def lessons(request):
     return render(request, 'main/lessons.html')
+
+
+def videos(request):
+    return render(request, 'main/videos.html')
