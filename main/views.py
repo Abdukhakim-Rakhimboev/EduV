@@ -27,4 +27,6 @@ def lessons(request):
 
 
 def videos(request):
-    return render(request, 'main/videos.html')
+    # Получаем параметр 'block' из строки запроса
+    block = request.GET.get('block', 'content1')  # По умолчанию 'content1'
+    return render(request, 'main/videos.html', {'block': block})

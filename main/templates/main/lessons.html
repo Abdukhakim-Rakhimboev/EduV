@@ -8,6 +8,7 @@
     
     
     <link rel="stylesheet" href="{% static 'main/css/lessons.css' %}">
+    <link rel="stylesheet" href="{% static 'main/scss/lessons.scss' %}">
     <link rel="stylesheet" href="{% static 'main/css/global.css' %}">
     <link rel="stylesheet" href="{% static 'main/scss/global.scss' %}">
     
@@ -45,28 +46,33 @@
                 <h1 class="top-title">SAT:</h1>
             </section>
             <section class="con-bottom">
+                
+                
+                
+                
+                
                 <div class="bottoms">
                     <h1 class="tit-box">Math</h1>
                     <p class="text-box">
                         30 easy-to-follow lessons that will help you build a strong foundation in math.
                     </p>
-                    <a href="#" class="btn-box"><span class="cl">Get started</span></a>
+                    <a href="{% url 'videos' %}?block=content1" class="btn-box"><span class="cl">Get started</span></a>
                 </div>
                 <div class="bottoms">
                     <h1 class="tit-box">Advanced math</h1>
                     <p class="text-box">
                         60 in-depth lessons, designed to challenge and elevate your mathematical skills.
                     </p>
-                    <a href="#" class="btn-box"><span class="cl">Get started</span></a>
+                    <a href="{% url 'videos' %}?block=content2" class="btn-box"><span class="cl">Get started</span></a>
                 </div>
                 <div class="bottoms">
                     <h1 class="tit-box">English grammer</h1>
                     <p class="text-box">
                         14 lessons break down essential grammar rules to improve your language skills.
                     </p>
-                    <a href="#" class="btn-box"><span class="cl">Get started</span></a>
+                    <a href="{% url 'videos' %}?block=content3" class="btn-box"><span class="cl">Get started</span></a>
                 </div>
-            </section>
+            </section>  
             <section class="image__box">
                 <img src="{% static 'main/img/lesson1.png' %}" alt="lesson1" class="lesson1">
                 <img src="{% static 'main/img/tothemoon.png' %}" alt="tothemoon" class="tothemoon">
@@ -116,11 +122,17 @@
                 <section class="s-t">
                     <h1 class="socials-title">Subscribe to our s.m networks :)</h1>
                     <div class="socials">
-                        <a href="https://www.instagram.com/eduv.uz">
-                            <img src="{% static 'main/img/instagram.png' %}" alt="inst" class="social">
-                        </a>
                         <a href="https://t.me/eduvvuz">
-                            <img src="{% static 'main/img/telegram.png' %}" alt="tg" class="social">
+                            <img src="{% static 'main/img/telegram.png' %}" alt="tg" class="tg">
+                        </a>
+                        <a href="https://www.tiktok.com/@eduvuz">
+                            <img src="{% static 'main/img/tiktok.png' %}" alt="tg" class="tt">
+                        </a>
+                        <a href="https://www.instagram.com/eduv.uz">
+                            <img src="{% static 'main/img/instagram.png' %}" alt="inst" class="inst">
+                        </a>
+                        <a href="https://youtube.com/@eduvuz">
+                            <img src="{% static 'main/img/youtube.png' %}" alt="tg" class="yt">
                         </a>
                     </div>
                 </section>
@@ -133,6 +145,8 @@
     </footer>
     
     
+    
+
     <script src="{% static 'main/js/main.js' %}"></script>
 </body>
 </html>

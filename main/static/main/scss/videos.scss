@@ -1,0 +1,8 @@
+.content-block {
+    display: none; /* All blocks hidden initially */
+  }
+  
+  .content-block.active {
+    display: block; /* Show the active block */
+  }
+  

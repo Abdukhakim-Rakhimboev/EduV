@@ -8,6 +8,7 @@
     
     
     <link rel="stylesheet" href="{% static 'main/css/videos.css' %}">
+    <link rel="stylesheet" href="{% static 'main/scss/videos.scss' %}">
     <link rel="stylesheet" href="{% static 'main/css/global.css' %}">
     <link rel="stylesheet" href="{% static 'main/scss/global.scss' %}">
     
@@ -34,11 +35,35 @@
                     <div class="line3"></div>
                 </div>
             </nav>
-            <div class="bg__title">
-                <h1 class="mn__title">SAT & IELTS</h1>
-            </div>
         </div>
     </header>
+    <main>
+        <div class="container main-content">
+            <section class="video-navi">
+                <a href="?block=content1" class="nav-button{% if block == 'content1' %} activee{% endif %}" data-target="content1">Math</a>
+                <a href="?block=content2" class="nav-button{% if block == 'content2' %} activee{% endif %}" data-target="content2">Advanced math</a>
+                <a href="?block=content3" class="nav-button{% if block == 'content3' %} activee{% endif %}" data-target="content3">English grammar</a>
+            </section>
+            
+            <section class="video-boxes">
+                <div id="content1" class="content-block{% if block == 'content1' %} active{% endif %}">
+                    <section class="math-beg">
+                        <iframe class="video-l" src="https://www.youtube.com/embed/AKrX5zDEtfY?si=9EmLAUs3D6DwvLvC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="video-l" src="https://www.youtube.com/embed/3_4eYJcoutc?si=oflvLae_mVSyj49R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="video-l" src="https://www.youtube.com/embed/3_4eYJcoutc?si=oflvLae_mVSyj49R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="video-l" src="https://www.youtube.com/embed/3_4eYJcoutc?si=oflvLae_mVSyj49R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </section>
+                </div>
+                <div id="content2" class="content-block{% if block == 'content2' %} active{% endif %}">
+                    <h1>Advanced Math</h1>
+                </div>
+                <div id="content3" class="content-block{% if block == 'content3' %} active{% endif %}">
+                    <h1>English Grammar</h1>
+                </div>
+            </section>
+            
+        </div>
+    </main>
     <footer>
         <div class="container footer-content">
             <section class="top">
@@ -49,11 +74,17 @@
                 <section class="s-t">
                     <h1 class="socials-title">Subscribe to our s.m networks :)</h1>
                     <div class="socials">
-                        <a href="https://www.instagram.com/eduv.uz">
-                            <img src="{% static 'main/img/instagram.png' %}" alt="inst" class="social">
-                        </a>
                         <a href="https://t.me/eduvvuz">
-                            <img src="{% static 'main/img/telegram.png' %}" alt="tg" class="social">
+                            <img src="{% static 'main/img/telegram.png' %}" alt="tg" class="tg">
+                        </a>
+                        <a href="https://www.tiktok.com/@eduvuz">
+                            <img src="{% static 'main/img/tiktok.png' %}" alt="tg" class="tt">
+                        </a>
+                        <a href="https://www.instagram.com/eduv.uz">
+                            <img src="{% static 'main/img/instagram.png' %}" alt="inst" class="inst">
+                        </a>
+                        <a href="https://youtube.com/@eduvuz">
+                            <img src="{% static 'main/img/youtube.png' %}" alt="tg" class="yt">
                         </a>
                     </div>
                 </section>
@@ -64,5 +95,24 @@
             </section>
         </div>
     </footer>
+    
+    
+    
+    
+    
+    <!-- <script>
+        document.querySelectorAll('.nav-button').forEach(function(box) {
+            box.addEventListener('click', function() {
+                // Удаляем класс activee у всех элементов
+                document.querySelectorAll('.nav-button').forEach(function(item) {
+                    item.classList.remove('activee');
+                });
+
+                // Добавляем класс activee к текущему элементу
+                this.classList.add('activee');
+            });
+        });
+    </script> -->
+    <script src="{% static 'main/js/none.js' %}"></script>
 </body>
 </html>

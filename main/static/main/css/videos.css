@@ -1,0 +1,70 @@
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-block {
+  display: none; /* Все блоки скрыты по умолчанию */
+}
+
+.content-block.active {
+  display: block; /* Показывать активный блок */
+}
+
+.video-navi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 60px;
+}
+
+.math-beg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.beg-box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.video-l {
+  width: 400px;
+  height: 225px;
+}
+
+.video-tit {
+  width: 400px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.nav-button {
+  position: relative;
+  color: rgb(77, 141, 12);
+  font-size: 20px;
+}
+
+.nav-button::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(6, 125, 83);
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -3px;
+  transition: 0.3s;
+}
+
+.nav-button:hover::after {
+  width: 100%;    
+}
+
+
+.nav-button.activee::after {
+  width: 100%; 
+}

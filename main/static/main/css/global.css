@@ -112,8 +112,17 @@ ul {
   gap: 15px;
 }
 
-.social {
-  width: 52px;
+.inst {
+  width: 48px;
+}
+.tg {
+  width: 41px;
+}
+.yt {
+  width: 60px;
+}
+.tt {
+  width: 42px;
 }
 
 hr {

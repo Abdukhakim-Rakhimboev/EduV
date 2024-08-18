@@ -98,50 +98,6 @@
                     </div>
                 </div>
             </div>
-            
-            
-            
-            <!-- <div class="counter" id="counter">0</div>
-            <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                    let counter = document.getElementById('counter');
-                    let count = 0;
-                    let counting = false;
-        
-                    function startCounting() {
-                        if (!counting) {
-                            counting = true;
-                            let interval = setInterval(function() {
-                                counter.textContent = count;
-                                count++;
-                                if (count > 50) {
-                                    clearInterval(interval);
-                                }
-                            }, 50); // скорость анимации, можно изменить по желанию
-                        }
-                    }
-        
-                    function isElementInViewport(el) {
-                        let rect = el.getBoundingClientRect();
-                        return (
-                            rect.top >= 0 &&
-                            rect.left >= 0 &&
-                            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-                        );
-                    }
-        
-                    function onScroll() {
-                        if (isElementInViewport(counter)) {
-                            startCounting();
-                            window.removeEventListener('scroll', onScroll); // Отключаем событие прокрутки после запуска анимации
-                        }
-                    }
-        
-                    window.addEventListener('scroll', onScroll);
-                    onScroll(); // Проверяем при загрузке страницы
-                });
-            </script> -->
         </div>
     </main>
     <footer>
@@ -154,11 +110,17 @@
                 <section class="s-t">
                     <h1 class="socials-title">Subscribe to our s.m networks :)</h1>
                     <div class="socials">
-                        <a href="https://www.instagram.com/eduv.uz">
-                            <img src="{% static 'main/img/instagram.png' %}" alt="inst" class="social">
-                        </a>
                         <a href="https://t.me/eduvvuz">
-                            <img src="{% static 'main/img/telegram.png' %}" alt="tg" class="social">
+                            <img src="{% static 'main/img/telegram.png' %}" alt="tg" class="tg">
+                        </a>
+                        <a href="https://www.tiktok.com/@eduvuz">
+                            <img src="{% static 'main/img/tiktok.png' %}" alt="tg" class="tt">
+                        </a>
+                        <a href="https://www.instagram.com/eduv.uz">
+                            <img src="{% static 'main/img/instagram.png' %}" alt="inst" class="inst">
+                        </a>
+                        <a href="https://youtube.com/@eduvuz">
+                            <img src="{% static 'main/img/youtube.png' %}" alt="tg" class="yt">
                         </a>
                     </div>
                 </section>
