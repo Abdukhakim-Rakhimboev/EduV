@@ -68,3 +68,57 @@
 .nav-button.activee::after {
   width: 100%; 
 }
+
+
+
+
+
+
+
+
+@media(max-width: 1400px) {
+  .video-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .math-beg {
+    grid-gap: 20px;
+  }
+  .video-l {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+
+
+@media(max-width: 1200px) {
+  .math-beg {
+    justify-content: center;
+    grid-gap: 20px;
+  }
+  .video-l {
+    width: 300px;
+    height: 180px;
+  }
+}
+
+
+@media(max-width: 1000px) {
+  .math-beg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media(max-width: 660px) {
+  .math-beg {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .video-navi {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

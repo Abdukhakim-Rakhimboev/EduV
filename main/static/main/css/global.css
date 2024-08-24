@@ -64,12 +64,10 @@ ul {
 
 .active::after {
   content: "";
-  position: absolute;
   background-color: darkred;
   height: 2px;
   width: 100%;
   left: 0;
-  bottom: -5px;
 }
 
 
